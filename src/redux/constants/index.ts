@@ -1,0 +1,14 @@
+export const SET_CATEGORY = "SET_CATEGORY";
+export const SET_FILTER = "SET_FILTER";
+export const VISIBLE_POPUP = "VISIBLE_POPUP";
+export const SET_ACTIVE_TYPE = "SET_ACTIVE_TYPE";
+export const SET_ACTIVE_SIZE = "SET_ACTIVE_SIZE";
+export const SET_SORT_BY_NAME = "SET_SORT_BY_NAME";
+export const SET_SORT_BY_RATING = "SET_SORT_BY_RATING";
+export const SET_SORT_BY_PRICE = "SET_SORT_BY_PRICE";
+export const SET_CATEGORIES = "SET_CATEGORIES";
+export const ADD_PIZZA_CART = "ADD_PIZZA_CART";
+export const MINUS_CART_ITEM = "MINUS_CART_ITEM";
+export const PLUS_CART_ITEM = "PLUS_CART_ITEM";
+export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
+export const CLEAR_CART = "CLEAR_CART";
