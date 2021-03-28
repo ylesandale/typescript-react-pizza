@@ -69,10 +69,6 @@ const Home: React.FC = () => {
     dispatch(setSortByPrice());
   };
 
-  React.useEffect(() => {
-    onSetFilter(0);
-  }, [categories]);
-
   const onAddCart = (pizzaObj: CartItem) => {
     dispatch(addPizzaToCart(pizzaObj));
   };
@@ -80,7 +76,11 @@ const Home: React.FC = () => {
   return (
     <div className="container">
       <div className="content__top">
-        <Categories categories={categories} onSetCategory={onSetCategory} />
+        <Categories
+          onSetFilter={onSetFilter}
+          categories={categories}
+          onSetCategory={onSetCategory}
+        />
         <div className="sort">
           <div className="sort__label">
             <svg
