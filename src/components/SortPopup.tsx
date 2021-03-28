@@ -7,6 +7,7 @@ interface FiltersProps {
   onSetSortByName(): void;
   onSetSortByRating(): void;
   onSetSortByPrice(): void;
+  onSetVisiblePopup(): void;
 }
 
 const SortPopup: React.FC<FiltersProps> = ({
@@ -15,6 +16,7 @@ const SortPopup: React.FC<FiltersProps> = ({
   onSetSortByName,
   onSetSortByRating,
   onSetSortByPrice,
+  onSetVisiblePopup,
 }) => {
   const onSort = (id: number, name: string) => {
     onSetFilter(id);
@@ -25,6 +27,7 @@ const SortPopup: React.FC<FiltersProps> = ({
     } else if (name === "цене") {
       onSetSortByPrice();
     }
+    onSetVisiblePopup();
   };
 
   return (

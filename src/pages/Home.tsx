@@ -43,7 +43,6 @@ const Home: React.FC = () => {
 
   const onSetFilter = (id: number) => {
     dispatch(setFilter(id));
-    onSetVisiblePopup();
   };
 
   const onSetVisiblePopup = () => {
@@ -71,7 +70,7 @@ const Home: React.FC = () => {
   };
 
   React.useEffect(() => {
-    dispatch(setFilter(0));
+    onSetFilter(0);
   }, [categories]);
 
   const onAddCart = (pizzaObj: CartItem) => {
@@ -112,6 +111,7 @@ const Home: React.FC = () => {
               onSetSortByName={onSetSortByName}
               onSetSortByRating={onSetSortByRating}
               onSetSortByPrice={onSetSortByPrice}
+              onSetVisiblePopup={onSetVisiblePopup}
             />
           )}
         </div>
