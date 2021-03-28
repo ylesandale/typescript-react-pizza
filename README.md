@@ -1,4 +1,6 @@
 Версия интернет-магазина пицц на TypeScript + React + Redux(without json server and axios)
+
+
 Версия на React + Redux + fake server: https://github.com/ylesandale/react-pizza
 
 **Попробуй:**
